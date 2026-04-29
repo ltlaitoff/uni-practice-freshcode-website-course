@@ -41,12 +41,6 @@
 }
 
 .title-md {
-    *,
-    *:before,
-    *:after {
-        box-sizing: border-box;
-    }
-
     font-size: 2.875rem;
     line-height: 120%;
     letter-spacing: -2%;
@@ -64,22 +58,21 @@
 }
 
 .text-md {
+    /* NOTE: 27px from design, but we can change it to 28 IMO */
     font-size: 1.6875rem;
     line-height: 120%;
 }
 
-/* Text end */
-
 /* Theme */
 /**
-* NOTE: It will better to use Tailwind CSS or something like this to generate classes from css variables on build
+ * NOTE: It will better to use Tailwind CSS or something like this to generate classes from css variables on build
  */
 .text-accent-dark {
     color: var(--color-accent-dark);
 }
 
-/*
-* Copied from TailwindCSS
+/**
+ * Copied from TailwindCSS
  * Used for allow screen reader read the text/block, but it will not be available for default viewer
  * NOTE: We cannot use display:none for this, because in this case reader will not see that text as well
  */
@@ -94,7 +87,23 @@
     white-space: nowrap;
     border-width: 0;
 }
-/* Global */
+
+.button {
+    display: inline-block;
+    width: fit-content;
+    padding: 1.125rem 2.25rem;
+    background-color: var(--color-accent);
+    border-radius: 5.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 96.9%;
+    cursor: pointer;
+}
+
+.button[data-variant="white"] {
+    background-color: var(--color-white);
+}
 
 .header {
     padding: 0 4.5rem 0 0;
@@ -121,23 +130,6 @@
 .logo {
     align-content: center;
     padding: 0 4.5rem;
-}
-
-.button {
-    display: inline-block;
-    width: fit-content;
-    padding: 1.125rem 2.25rem;
-    background-color: var(--color-accent);
-    border-radius: 5.5rem;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.125rem;
-    line-height: 96.9%;
-    cursor: pointer;
-}
-
-.button[data-variant="white"] {
-    background-color: var(--color-white);
 }
 
 .menu--link:has(.menu--support) {
@@ -224,11 +216,21 @@
 }
 
 .program--image__man-on-bench {
-    background-image: image-set(url("/src/assets/man-on-the-bench.avif") type("image/avif"), url("/src/assets/man-on-the-bench.webp") type("image/webp"), url("/src/assets/man-on-the-bench.jpg") type("image/jpeg"));
+    /* prettier-ignore */
+    background-image: image-set(
+            url("/src/assets/man-on-the-bench.avif") type("image/avif"),
+            url("/src/assets/man-on-the-bench.webp") type("image/webp"),
+            url("/src/assets/man-on-the-bench.jpg") type("image/jpeg")
+    );
 }
 
 .program--image__children {
-    background-image: image-set(url("/src/assets/children.avif") type("image/avif"), url("/src/assets/children.webp") type("image/webp"), url("/src/assets/children.jpg") type("image/jpeg"));
+    /* prettier-ignore */
+    background-image: image-set(
+            url("/src/assets/children.avif") type("image/avif"),
+            url("/src/assets/children.webp") type("image/webp"),
+            url("/src/assets/children.jpg") type("image/jpeg")
+    );
 }
 
 .mission {
@@ -260,7 +262,13 @@
     min-width: 28.375rem;
 
     background-repeat: no-repeat;
-    background-image: image-set(url("/src/assets/smile-kids.avif") type("image/avif"), url("/src/assets/smile-kids.webp") type("image/webp"), url("/src/assets/smile-kids.png") type("image/png"));
+
+    /* prettier-ignore */
+    background-image: image-set(
+            url("/src/assets/smile-kids.avif") type("image/avif"),
+            url("/src/assets/smile-kids.webp") type("image/webp"),
+            url("/src/assets/smile-kids.png") type("image/png")
+    );
 }
 
 .mission--background {
@@ -272,7 +280,13 @@
     min-width: 44.75rem;
 
     background-repeat: no-repeat;
-    background-image: image-set(url("/src/assets/mission-bg.avif") type("image/avif"), url("/src/assets/mission-bg.webp") type("image/webp"), url("/src/assets/mission-bg.png") type("image/png"));
+
+    /* prettier-ignore */
+    background-image: image-set(
+            url("/src/assets/mission-bg.avif") type("image/avif"),
+            url("/src/assets/mission-bg.webp") type("image/webp"),
+            url("/src/assets/mission-bg.png") type("image/png")
+    );
 }
 
 .support {
