@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>uni-practice-freshcode-website-course</title>
+        <link href="/src/style.css" rel="stylesheet" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    </head>
+
+    <body class="app">
+        <header class="header">
+            <h1 class="sr-only">Company name</h1>
+            <a href="#" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="none">
+                    <path
+                        fill="#000"
+                        fill-rule="evenodd"
+                        d="M39.733 64.192C54.2 60.904 65 47.963 65 32.5 65 14.55 50.45 0 32.5 0S0 14.55 0 32.5c0 12.35 6.888 23.09 17.031 28.59.156-8.094 2.878-17.695 10.728-27.455l-7.512-5.458h9.558l2.953-9.09 2.954 9.09h9.557l-7.732 5.618 2.953 9.09-7.678-5.58c.722 8.134 2.704 18.214 6.92 26.887"
+                        clip-rule="evenodd"
+                    />
+                </svg>
+            </a>
+            <nav class="menu">
+                <h2 class="sr-only">Menu</h2>
+
+                <ul class="menu--list">
+                    <li class="menu--item"><a class="menu--link" href="#">Контакти</a></li>
+                    <li class="menu--item"><a class="menu--link" href="#">Головна</a></li>
+                    <li class="menu--item"><a class="menu--link" href="#">З чим працюємо</a></li>
+                    <li class="menu--item">
+                        <a class="menu--link" href="#" aria-label="Support"><span class="menu--support button">Підтримати фонд</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="face">
+                <div class="face--block">
+                    <h2 class="face--title">Фонд підтримки постраждалих від війни</h2>
+                    <div class="text">Ми хочемо допомогти кожному, хто постраждав під час війни</div>
+                    <button class="button face--button" data-variant="white" aria-label="Support">Підтримати фонд</button>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="about--content">
+                    <h2 class="title">Ми – фонд підтримки постраждалих від війни</h2>
+                    <div class="about--wrapper">
+                        <div class="text-md">Наша мета – психологічна та гуманітарна допомога українцям</div>
+                        <div class="text text-accent-dark">Кожен, хто звернеться, отримає допомогу, яка у наших силах</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="program">
+                <h2 class="sr-only">Наші програми</h2>
+
+                <article class="program--block">
+                    <div class="program--content">
+                        <h2 class="title-md">Реабілітаційний центр</h2>
+                        <div class="text">Ми допомагаємо людям, які постраждали знайти правильне лікування. У нашому фонді є чотири напрями: фізичної та реабілітаційної медицини, терапевтичне, неврологічне та хірургічне. Ми маємо заклади-партнери, де швидко та якісно можуть надати допомогу.</div>
+                    </div>
+
+                    <div class="program--image program--image__man-on-bench"></div>
+                </article>
+
+                <article class="program--block">
+                    <div class="program--content">
+                        <h2 class="title-md">Робота з дітьми</h2>
+                        <div class="text">Діти – найвразливіша частина суспільства, і їм особливо потрібна підтримка дорослих. Тому наш фонд збирає речі для дітей, проводить літні й зимові табори, майстер-класи та за потреби – дитячих прсихотерапевтів.</div>
+                    </div>
+
+                    <div class="program--image program--image__children"></div>
+                </article>
+
+                <div class="button">Дізнатися більше</div>
+            </section>
+
+            <section class="mission">
+                <div class="mission--block">
+                    <h2 class="text-md mission--text">Наша місія – щоб кожен українець мав можливість отримати допомогу й не залишився наодинці зі своїми проблемами</h2>
+                    <div class="mission--background"></div>
+                    <div class="mission--image"></div>
+                </div>
+            </section>
+
+            <section class="support">
+                <header class="support--header">
+                    <h2 class="title">Підтримайте нашу роботу!</h2>
+                    <div class="text text-accent-dark">Усі ваші донати йдуть саме на роботу фонду, заробітні плати ми виплачуємо з коштів грантодавців</div>
+                </header>
+
+                <div class="support--content">
+                    <h2 class="text-md">Наша мета 10 000 000 гривень!</h2>
+                    <div class="title support--money">
+                        <div>00</div>
+                        <div class="support--divider"></div>
+                        <div>230</div>
+                        <div class="support--divider"></div>
+                        <div>025</div>
+                    </div>
+                </div>
+
+                <div class="button">Дізнатися більше</div>
+            </section>
+
+            <section class="contact">
+                <h2 class="sr-only">Сконтактувати з нами</h2>
+
+                <header class="contact--header">
+                    <h2 class="contact--block-title title">Контакти</h2>
+
+                    <div class="contact--block-contacts text">
+                        <div class="contact--social">
+                            <img src="src/assets/phone-icon.png" alt="Phone" class="contact--social-icon" />
+                            <div class="contact--social-text">
+                                Якщо у вас виникають питання – телефонуйте за номером
+                                <a href="tel:0" class="contact--social-phone">0-987-654-321</a>
+                            </div>
+                        </div>
+                        <div class="contact--social">
+                            <div class="contact--social-icons">
+                                <img src="src/assets/telegram-icon.png" alt="Telegram" class="contact--social-icon" />
+                                <img src="src/assets/whatsapp-icon.png" alt="WhatsApp" class="contact--social-icon" />
+                            </div>
+
+                            <div class="contact--social-text">Або пишіть нам у чат-бот</div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="contact--content">
+                    <div class="contact--image"></div>
+
+                    <form class="contact-form">
+                        <h2 class="text-md">Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку</h2>
+
+                        <div class="contact-form--block">
+                            <input type="text" class="contact-form--input" placeholder="Ім'я" />
+                            <input type="text" class="contact-form--input" placeholder="Емейл" />
+                            <button class="contact-form--button button">Підписатися</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
